@@ -1,10 +1,10 @@
 ![](https://github.com/Luna-Klatzer/Kipper/raw/main/img/Kipper-Logo-with-head.png)
 
-# Kipper
+# Kipper CLI
 
-The Kipper programming language (CLI implementation) - Currently in development. No usable/stable versions available
+The Kipper programming language (CLI implementation)
 
-*Note that this is a development preview! Stable releases might take until January-March 2022*
+*Note that this is a development version! Stable releases might take until April/May 2022*
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/@kipper/cli)](https://npmjs.org/package/@kipper/cli)
@@ -12,7 +12,7 @@ The Kipper programming language (CLI implementation) - Currently in development.
 [![Issues](https://img.shields.io/github/issues/Luna-Klatzer/Kipper)](https://github.com/Luna-Klatzer/Kipper/issues)
 
 <!-- toc -->
-* [Kipper](#kipper)
+* [Kipper CLI](#kipper-cli)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
