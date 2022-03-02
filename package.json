@@ -45,11 +45,11 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/Luna-Klatzer/Kipper",
+  "homepage": "https://wmc-ahif-2021.github.io/Kipper-Web/",
   "bugs": "https://github.com/Luna-Klatzer/Kipper/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Luna-Klatzer/Kipper"
+    "url": "https://github.com/Luna-Klatzer/Kipper-CLI"
   },
   "keywords": [
     "oclif",
