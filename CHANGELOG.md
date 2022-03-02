@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Added `logger.ts`, which implements logger handling for the CLI. This includes the following
+  items:
+  - `defaultKipperLoggerConfig` - Default Config for the tslog `Logger`
+  - `defaultCliEmitHandler` - Default Emit Handler for the CLI
+  - `defaultCliLogger` - Default tslog `Logger`
 
 ### Changed
 

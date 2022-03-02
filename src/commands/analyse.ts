@@ -6,6 +6,8 @@
  */
 import { Command, flags } from "@oclif/command";
 import { KipperCompiler } from "@kipper/base";
+import {KipperLogger} from "@kipper/base/lib/logger";
+import {defaultCliEmitHandler} from "../logger";
 
 export default class Analyse extends Command {
   static description = "Analyses a file and validates its syntax";
@@ -30,7 +32,8 @@ export default class Analyse extends Command {
 
   async run() {
     const { args, flags } = this.parse(Analyse);
-    const compiler = new KipperCompiler();
+    const logger = new KipperLogger(defaultCliEmitHandler);
+    const compiler = new KipperCompiler(logger);
 
     // TODO! Implement reading of file
     // await compiler.syntaxAnalyse(fileContent, true, flags.encoding as BufferEncoding);
