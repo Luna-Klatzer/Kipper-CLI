@@ -8,7 +8,7 @@ import { Command, flags } from "@oclif/command";
 import { KipperCompiler } from "@kipper/base";
 
 export default class Compile extends Command {
-  static description = "Compiles a file into it's js-counterpart with it's typescript types added";
+  static description = "Compiles a Kipper source file file into TypeScript";
 
   // TODO! Add examples when the command moves out of development
   static examples = [];

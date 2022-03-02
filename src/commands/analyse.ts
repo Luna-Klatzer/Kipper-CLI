@@ -17,7 +17,7 @@ export default class Analyse extends Command {
     {
       name: "file",
       required: true,
-      description: "The file that should be analysed and checked"
+      description: "The file that should be analysed"
     }
   ];
 

@@ -8,7 +8,7 @@ import { Command, flags } from "@oclif/command";
 import { KipperCompiler } from "@kipper/base/";
 
 export default class Run extends Command {
-  static description = "Runs a compiled file or compiles and afterwards runs the passed file";
+  static description = "Runs a Kipper program";
 
   // TODO! Add examples when the command moves out of development
   static examples = [];
@@ -17,7 +17,7 @@ export default class Run extends Command {
     {
       name: "file",
       required: true,
-      description: "The file that should be either run (.js) or compiled and afterwards run"
+      description: "The file that should be run (js/ts)"
     }
   ];
 

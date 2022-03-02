@@ -1,4 +1,4 @@
-![](./img/Kipper-Logo-with-head.png)
+![](https://github.com/Luna-Klatzer/Kipper/raw/main/img/Kipper-Logo-with-head.png)
 
 # Kipper
 
@@ -16,7 +16,6 @@ The Kipper programming language (CLI implementation) - Currently in development.
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
-<!-- tocstop -->
 
 # Usage
 
@@ -32,7 +31,6 @@ USAGE
   $ kipper COMMAND
 ...
 ```
-<!-- usagestop -->
 <!-- usagestop -->
 
 # Commands
@@ -52,17 +50,17 @@ USAGE
   $ kipper analyse FILE
 
 ARGUMENTS
-  FILE  The file that should be analysed and checked
+  FILE  The file that should be analysed
 
 OPTIONS
-  --encoding=encoding  [default: utf8] The encoding that should be used to read the file
+  --encoding=encoding  [default: utf16] The encoding that should be used to read the file
 ```
 
-_See code: [src/commands/analyse.ts](https://github.com/Luna-Klatzer/Kipper/blob/v0.0.5/src/commands/analyse.ts)_
+_See code: [src/commands/analyse.ts](https://github.com/Luna-Klatzer/Kipper-CLI/blob/v0.0.5/src/commands/analyse.ts)_
 
 ## `kipper compile FILE`
 
-Compiles a file into it's js-counterpart with it's typescript types added
+Compiles a Kipper source file file into TypeScript
 
 ```
 USAGE
@@ -72,27 +70,10 @@ ARGUMENTS
   FILE  The file that should be compiled
 
 OPTIONS
-  --encoding=encoding  [default: utf8] The encoding that should be used to read the file
+  --encoding=encoding  [default: utf16] The encoding that should be used to read the file
 ```
 
-_See code: [src/commands/compile.ts](https://github.com/Luna-Klatzer/Kipper/blob/v0.0.5/src/commands/compile.ts)_
-
-## `kipper run FILE`
-
-Runs a compiled file or compiles and afterwards runs the passed file
-
-```
-USAGE
-  $ kipper run FILE
-
-ARGUMENTS
-  FILE  The file that should be either run (.js) or compiled and afterwards run
-
-OPTIONS
-  --encoding=encoding  [default: utf8] The encoding that should be used to read the file
-```
-
-_See code: [src/commands/run.ts](https://github.com/Luna-Klatzer/Kipper/blob/v0.0.5/src/commands/run.ts)_
+_See code: [src/commands/compile.ts](https://github.com/Luna-Klatzer/Kipper-CLI/blob/v0.0.5/src/commands/compile.ts)_
 
 ## `kipper help [COMMAND]`
 
@@ -110,5 +91,21 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3/src/commands/help.ts)_
-<!-- commandsstop -->
+
+## `kipper run FILE`
+
+Runs a Kipper program
+
+```
+USAGE
+  $ kipper run FILE
+
+ARGUMENTS
+  FILE  The file that should be run (js/ts)
+
+OPTIONS
+  --encoding=encoding  [default: utf16] The encoding that should be used to read the file
+```
+
+_See code: [src/commands/run.ts](https://github.com/Luna-Klatzer/Kipper-CLI/blob/v0.0.5/src/commands/run.ts)_
 <!-- commandsstop -->
