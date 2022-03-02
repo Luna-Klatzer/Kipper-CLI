@@ -16,8 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.5] - 2022-03-02
 
 ### Added
-- `KipperParseStream` for handling the reading of a file
-- Basic commands `analyse`, `compile` and `run` (Not implemented - In work!)
+- Class `KipperParseStream` for storing the content of a file.
+- Namespace `KipperStreams` with the function `fromFile()`, which reads a file asynchronously and 
+  initialises an instance of the class `KipperParseStream`.
+- Basic commands `analyse`, `compile` and `run`, which were imported from the main repository.
 
 [unreleased]: https://github.com/Luna-Klatzer/Kipper-CLI/compare/0.0.5...HEAD
 [0.0.5]: https://github.com/Luna-Klatzer/Kipper-CLI/tags/0.0.5
