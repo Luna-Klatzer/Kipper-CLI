@@ -23,7 +23,7 @@ export default class Run extends Command {
 
   static flags = {
     encoding: flags.string({
-      default: "utf8",
+      default: "utf16",
       description: "The encoding that should be used to read the file"
     })
   };

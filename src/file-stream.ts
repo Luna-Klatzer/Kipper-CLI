@@ -17,7 +17,7 @@ export namespace KipperStreams {
    * @param encoding The encoding that should be used to read the file
    * @returns The new {@link KipperParseFile} instance with the set values
    */
-  export async function fromFile(filePath: string, encoding: string | BufferEncoding = 'utf8'): Promise<KipperParseFile> {
+  export async function fromFile(filePath: string, encoding: string | BufferEncoding = 'utf16'): Promise<KipperParseFile> {
     let fileLocation = path.resolve(filePath);
     let name = (() => {
       let items1 = fileLocation.split("\\");

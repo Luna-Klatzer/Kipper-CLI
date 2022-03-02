@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "oclif",
+    "oclif-typescript"
+  ],
+  "rules": {
+    "max-params": 1,
+    "no-unused-vars": 1,
+    "no-warning-comments": 0,
+    "@typescript-eslint/no-unused-vars": 1,
+    "no-useless-catch": 1,
+    "comma-dangle": 0,
+    "@typescript-eslint/no-empty-function": 1,
+    "object-curly-spacing": 0,
+    "quotes": 0,
+    "semi": 0
+  }
+}
