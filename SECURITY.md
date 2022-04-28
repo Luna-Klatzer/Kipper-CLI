@@ -21,7 +21,7 @@ The following versions are supported and will get bug-fixes and security updates
 | 0.1.x    | :white_check_mark: |
 | 0.0.x    | :x:                |
 
-`0.1.0` is not relased yet. See [#8](https://github.com/Luna-Klatzer/Kipper-CLI).
+`0.1.0` is not relased yet. See [#8](https://github.com/Luna-Klatzer/Kipper-CLI/issues/8).
 
 ### NPM Deprecation
 
