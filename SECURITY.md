@@ -18,9 +18,10 @@ The following versions are supported and will get bug-fixes and security updates
 
 | Version  | Supported          |
 | -------- | ------------------ |
-| 0.0.x    | :white_check_mark: |
+| 0.1.x    | :white_check_mark: |
+| 0.0.x    | :x:                |
 
-No supported version at the moment. See [#8](https://github.com/Luna-Klatzer/Kipper-CLI).
+`0.1.0` is not relased yet. See [#8](https://github.com/Luna-Klatzer/Kipper-CLI).
 
 ### NPM Deprecation
 
