@@ -1,5 +1,11 @@
 # Security Policy
 
+## Base Module - `@kipper/base`
+
+For version support info for the base module go [here](https://github.com/Luna-Klatzer/Kipper/security/policy).
+
+In case that a version has no support in `@kipper/base` and the CLI depends on it, then the corresponding version in the CLI is also NOT supported.
+
 ## Supported Versions
 
 Note that considering this is a work-in-progress project with no stable version released yet,
@@ -12,8 +18,9 @@ The following versions are supported and will get bug-fixes and security updates
 
 | Version  | Supported          |
 | -------- | ------------------ |
-| 0.0.5    | :white_check_mark: |
-| <0.0.5   | :x:                |
+| 0.0.x    | :white_check_mark: |
+
+No supported version at the moment. See [#8](https://github.com/Luna-Klatzer/Kipper-CLI).
 
 ### NPM Deprecation
 
