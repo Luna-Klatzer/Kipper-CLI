@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Core Compiler and language
+    url: https://github.com/Luna-Klatzer/Kipper
+    about: Please go here for proposals regarding the core compiler and language.
