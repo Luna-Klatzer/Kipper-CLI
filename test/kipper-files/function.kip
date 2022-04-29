@@ -1,6 +1,6 @@
-const variable: int = 4;
+const variable: num = 4;
 
-def x(param: int) -> int {
+def x(param: num) -> num {
     call print(param);
 
     return param * param;

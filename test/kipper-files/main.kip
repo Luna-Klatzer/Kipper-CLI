@@ -1,9 +1,9 @@
-var y: int = 4;
-var x: int = 4;
-const x: int = 3333;
+var y: num = 4;
+var x: num = 4;
+const x: num = 3333;
 
 def x() -> x {
-    var x: string = "string";
+    var x: str = "string";
 
     call print(x);
 }
