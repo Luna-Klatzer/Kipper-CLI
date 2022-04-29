@@ -11,6 +11,18 @@ import {promises as fs} from "fs";
 import * as path from "path";
 
 /**
+ * Valid encodings that Kipper supports.
+ * @since 0.1.0
+ */
+export type KipperEncoding = 'ascii' | 'utf8' | 'utf16le';
+
+/**
+ * Array of all valid encodings that Kipper supports.
+ * @since 0.1.0
+ */
+export const KipperEncodings: Array<KipperEncoding> = ['ascii', 'utf8', 'utf16le'];
+
+/**
  * ParserFile class that is used to represent a class that may be given to the
  * compiler to be parsed. This file is a simple wrapper around a file-read and
  * storing as a string in 'stringContent'.
