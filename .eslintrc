@@ -1,7 +1,12 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
-    "oclif",
-    "oclif-typescript"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "max-params": 1,
@@ -14,5 +19,8 @@
     "object-curly-spacing": 0,
     "quotes": 0,
     "semi": 0
+  },
+  "parserOptions": {
+    "sourceType": "module"
   }
 }

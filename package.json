@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
-    "eslint": "^7.32.0",
+    "eslint": "^8.14.0",
     "@oclif/dev-cli": "^1.26.0",
     "@oclif/test": "^1.2.8",
     "@types/mocha": "^5.2.7",
@@ -30,8 +30,6 @@
     "typescript": "^3.9.10",
     "@types/sinon": "^7.5.2",
     "@sinonjs/fake-timers": "^6.0.1",
-    "eslint-config-oclif": "^3.1.0",
-    "eslint-config-oclif-typescript": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "json-parse-even-better-errors": "2.3.1"
@@ -46,7 +44,7 @@
     "/oclif.manifest.json"
   ],
   "homepage": "https://wmc-ahif-2021.github.io/Kipper-Web/",
-  "bugs": "https://github.com/Luna-Klatzer/Kipper/issues",
+  "bugs": "https://github.com/Luna-Klatzer/Kipper-CLI/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/Luna-Klatzer/Kipper-CLI"
@@ -55,6 +53,7 @@
     "oclif",
     "language",
     "compiler",
+    "backend",
     "cli"
   ],
   "license": "GPL-3.0",
