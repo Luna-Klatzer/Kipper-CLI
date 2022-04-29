@@ -8,7 +8,7 @@ import {Command, flags} from "@oclif/command";
 import {KipperCompiler} from "@kipper/base";
 import {defaultCliEmitHandler} from "../logger";
 import {KipperLogger} from "@kipper/base/lib/logger";
-import {KipperEncodings, KipperParseFile} from "../file-stream";
+import {KipperEncoding, KipperEncodings, KipperParseFile, verifyEncoding} from "../file-stream";
 
 export default class Analyse extends Command {
   static description = "Analyses a file and validates its syntax.";
@@ -34,15 +34,18 @@ export default class Analyse extends Command {
     const logger = new KipperLogger(defaultCliEmitHandler);
     const compiler = new KipperCompiler(logger);
 
+    // Ensure the encoding is valid
+    verifyEncoding(flags.encoding);
+
     // Start timer for processing
     const startTime: number = (new Date()).getTime();
 
     // Analyse the file
-    const file: KipperParseFile = await KipperParseFile.fromFile(args.file, flags.encoding as BufferEncoding);
+    const file: KipperParseFile = await KipperParseFile.fromFile(args.file, flags.encoding as KipperEncoding);
     await compiler.syntaxAnalyse(file.stringContent);
 
     // Finished!
-    const endTime: number = ((new Date().getTime()) - startTime) / 1000;
-    await logger.info(`Finished code analysis in ${endTime}s.`);
+    const duration: number = ((new Date().getTime()) - startTime) / 1000;
+    await logger.info(`Finished code analysis in ${duration}s.`);
   }
 }
