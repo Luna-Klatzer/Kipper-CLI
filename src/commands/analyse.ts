@@ -4,15 +4,14 @@
  * @copyright 2021-2022 Luna Klatzer
  * @since 0.0.5
  */
-import { Command, flags } from "@oclif/command";
-import { KipperCompiler } from "@kipper/base";
-import {KipperLogger} from "@kipper/base/lib/logger";
+import {Command, flags} from "@oclif/command";
+import {KipperCompiler} from "@kipper/base";
 import {defaultCliEmitHandler} from "../logger";
+import {KipperLogger} from "@kipper/base/lib/logger";
+import {KipperParseFile} from "../file-stream";
 
 export default class Analyse extends Command {
   static description = "Analyses a file and validates its syntax";
-
-  // TODO! Add examples when the command moves out of development
   static examples = [];
 
   static args = [
@@ -25,17 +24,25 @@ export default class Analyse extends Command {
 
   static flags = {
     encoding: flags.string({
-      default: "utf16",
+      default: "utf8",
       description: "The encoding that should be used to read the file"
     })
   };
 
   async run() {
-    const { args, flags } = this.parse(Analyse);
+    const {args, flags} = this.parse(Analyse);
     const logger = new KipperLogger(defaultCliEmitHandler);
     const compiler = new KipperCompiler(logger);
 
-    // TODO! Implement reading of file
-    // await compiler.syntaxAnalyse(fileContent, true, flags.encoding as BufferEncoding);
+    // Start timer for processing
+    const startTime = (new Date()).getTime();
+
+    // Analyse the file
+    const file = await KipperParseFile.fromFile(args.file, flags.encoding as BufferEncoding);
+    await compiler.syntaxAnalyse(file.stringContent);
+
+    // Finished!
+    const endTime = ((new Date().getTime()) - startTime) / 1000;
+    await logger.info(`Finished code analysis in ${endTime}s.`);
   }
 }
