@@ -7,7 +7,7 @@
     "kipper": "./bin/run"
   },
   "dependencies": {
-    "@kipper/base": "^0.0.5",
+    "@kipper/base": "^0.3.0",
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.3",
