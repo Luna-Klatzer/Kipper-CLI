@@ -22,7 +22,7 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^10.17.60",
     "mocha": "^5.2.0",
-    "nyc": "^14.1.1",
+    "nyc": "^15.1.0",
     "os-tmpdir": "1.0.2",
     "prettier": "2.4.1",
     "pseudomap": "1.0.2",
