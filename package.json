@@ -29,7 +29,7 @@
     "ts-node": "8.10.2",
     "typescript": "^3.9.10",
     "@types/sinon": "^7.5.2",
-    "@sinonjs/fake-timers": "^6.0.1",
+    "@sinonjs/fake-timers": "^9.1.2",
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
